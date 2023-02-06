@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const codes = require('../lib/status-codes.json');
 const { Command } = require('commander');
 const program = new Command();
