@@ -1,0 +1,26 @@
+{
+  "name": "http-status-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node .",
+    "local": "npm i -g && http-status",
+    "refresh": "rd /s /q \"./node_modules\" && del /f \"./package-lock.json\" && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qzconnor/http-status-cli.git"
+  },
+  "keywords": [
+    "http",
+    "status",
+    "cli"
+  ],
+  "author": "xConnorTV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qzconnor/http-status-cli/issues"
+  },
+  "homepage": "https://github.com/qzconnor/http-status-cli#readme"
+}
