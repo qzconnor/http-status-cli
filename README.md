@@ -1,7 +1,7 @@
 # http-status-cli
 Install globaly:
 ```
-npm i -g http-status-cli
+npm i -g @xconnortv!/http-status-cli
 ```
 Usage:
 ```
