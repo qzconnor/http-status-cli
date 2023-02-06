@@ -4,10 +4,17 @@
   "description": "",
   "main": "bin/index.js",
   "scripts": {
-    "start": "node .",
-    "local": "npm i -g && http-status",
+    "start": "node . -l 404",
+    "local": "npm i -g && http-status --help",
     "refresh": "rd /s /q \"./node_modules\" && del /f \"./package-lock.json\" && npm install"
   },
+  "bin": {
+    "http-status": "./bin/index.js"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qzconnor/http-status-cli.git"
@@ -22,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/qzconnor/http-status-cli/issues"
   },
-  "homepage": "https://github.com/qzconnor/http-status-cli#readme"
+  "homepage": "https://github.com/qzconnor/http-status-cli#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "clear": "^0.1.0",
+    "colors": "^1.4.0",
+    "commander": "^10.0.0"
+  }
 }
