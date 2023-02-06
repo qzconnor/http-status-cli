@@ -13,7 +13,6 @@ Optionals:
 ```
 -s, -short | Short description
 -p, -plain | Plain text without colors
-
 ```
 Example:
 ```
