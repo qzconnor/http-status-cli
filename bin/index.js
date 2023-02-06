@@ -14,10 +14,12 @@ program
 program
     .command("lookup", { isDefault: true })
     .description("Lookup a status code")
-    .argument("<code>", "The code to lookup")
+    .alias("l")
+    .argument("<code>", "The code to lookup", undefined)
     .option("-s, --short", "Display the short description", false)
     .option("-p, --plain", "Uses Color for printing", false)
     .action((in_code, options) => {
+        console.log(in_code)
         const isShort = options.short;
         const code = getCode(codes, in_code);
 
